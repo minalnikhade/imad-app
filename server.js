@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-   res.send('Article one requested and will be served here by web developer Minal.'); 
+   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/article-two',function(req,res){
